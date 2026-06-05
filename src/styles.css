@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f8fafc;
+  color: #102a43;
+  font-family: Poppins, system-ui, sans-serif;
+}
+
+::selection {
+  background: #00a99d;
+  color: white;
+}
+
+.container-page {
+  width: min(1180px, calc(100% - 32px));
+  margin-inline: auto;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(18px);
+}
+
+.sports-gradient {
+  background:
+    radial-gradient(circle at 14% 20%, rgba(245, 194, 66, 0.24), transparent 28%),
+    radial-gradient(circle at 88% 8%, rgba(0, 169, 157, 0.22), transparent 28%),
+    linear-gradient(135deg, #ffffff 0%, #f8fafc 45%, #ecfffd 100%);
+}
+
+.status-available {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status-booked {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.status-pending {
+  background: #fef3c7;
+  color: #92400e;
+}
